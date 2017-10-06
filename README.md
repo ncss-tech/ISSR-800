@@ -3,6 +3,7 @@ Intermediate Scale Soil Rasters prepared on an 800m grid, from FY2017 SSURGO and
 
 ## Draft Proposal
 **Intermediate-scale gridded soil property and interpretation maps from averaged and aggregated SSURGO and STATSGO data.**
+
 Dylan Beaudette - Digital Soil Mapping Specialist, NRCS Region 2
 Tom D’Avello - Soil Scientist/GIS Specialist, NSSC-Geospatial Research Unit 
 Whityn Owen - GIS Specialist, NRCS Oregon
