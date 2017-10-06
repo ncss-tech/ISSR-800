@@ -1,2 +1,2 @@
 # ISSR-800
-Intermediate Scale Soil Raster (data) prepared on an 800m grid.
+Intermediate Scale Soil Rasters prepared on an 800m grid, from FY2017 SSURGO and STATSGO data.
