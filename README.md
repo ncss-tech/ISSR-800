@@ -1,6 +1,8 @@
 # ISSR-800
 Intermediate Scale Soil Rasters prepared on an 800m grid, from FY2017 SSURGO and STATSGO data.
 
+![](examples/pH-0-25cm-800m.jpg)
+
 ## Draft Proposal
 **Intermediate-scale gridded soil property and interpretation maps from averaged and aggregated SSURGO and STATSGO data.**
 
