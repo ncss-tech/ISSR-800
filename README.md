@@ -1,27 +1,24 @@
 # ISSR-800
-Intermediate Scale Soil Rasters prepared on an 800m grid, from FY2017 SSURGO and STATSGO data.
+**Intermediate-scale gridded soil property and interpretation maps from averaged and aggregated SSURGO and STATSGO data.**
 
 ![](examples/pH-0-25cm-800m.jpg)
 
-## Draft Proposal
-**Intermediate-scale gridded soil property and interpretation maps from averaged and aggregated SSURGO and STATSGO data.**
+## Background 
+There is a long-standing gap in analytical capacity for users of soil information, between the scales of SSURGO and STATSGO, that require a raster-based product that is both simple to use and sufficiently detailed for use at the LRU to MLRA scales. SDD staff has developed a product that provides raster maps of selected soil properties various depths and soil interpretations, provided at the 800m grid size, derived from SSURGO and STATSGO.
 
-Dylan Beaudette - Digital Soil Mapping Specialist, NRCS Region 2
-Tom D’Avello - Soil Scientist/GIS Specialist, NSSC-Geospatial Research Unit 
-Whityn Owen - GIS Specialist, NRCS Oregon
-Jennifer Wood - Soil Data Quality Specialist, NRCS Region 
-Dylan Beaudette - Digital Soil Mapping Specialist, NRCS Region 2
-Stephen Roecker - Soil Data Quality Specialist/GIS Specialist, NRCS Region 11
-Tom D’Avello - Soil Scientist/GIS Specialist, NSSC-Geospatial Research Unit
-Jason Nemecek - State Soil Scientist, Wisconsin
+## Objective
+Provide a set of continuous rasters for selected soil properties for selected depths, as well as for selected interpretations, derived from SSURGO and STATSGO, for the entire U.S. The resulting maps would be a compromise between flexibility and ease of use. Alternative "gap-filled" products (as proposed by the Database Focus Team) could serve the role as a general purpose, vector/raster database.
 
-There are not many “intermediate-scale” soil survey products available for the evaluation of MLRA concepts, development of LRU concepts, and regional to continental scale modeling projects. SSURGO is often too detailed, not spatially complete, and STATSGO is often too coarse and not well aligned with recent developments in soil survey.
+## What
+The product proposed here provides soil property and interpretation information for 800m grid raster files. Values for a selected set of soil properties at specified depths, as well as selected interpretation, are provided for each 800m pixel. Depending on the property, depth interval used, and interpretation, different methods are used to aggregate within the profile and across the map unit. An excel spreadsheet is available on a NCSS GitHub site or a Database Focus Team SharePoint page for examination of the different values and methods used. Some pixels will represent information across map unit boundaries contained in the original vector maps. For this project, the 800m pixel size was chosen to provide a product for LRU to MLRA to continental scale projects that are small enough for rapid analysis and display. Another reason for the 800m pixel size is to approximate the size of the 800m PRISM climate products that are commonly available and used as climate proxies in many regional to continental scale analyses.
 
-SSD staff recently developed a set of 800m resolution maps of 40 commonly used soil physical, chemical, and interpretive parameters. We propose that these maps function as part of a new suite of intermediate-scale, gridded products (100m, 200m, 400m, 800m), filling an important void for “official” USDA-NRCS raster soil survey data.
-
-The maps are generated using vector-based aggregation of the latest SSURGO database, with NOTCOM regions filled using the latest STATSGO database. The resulting maps are suitable for scales between (order 4) SSURGO and STATSGO. Conveniently sized (typically between 10–100MB each), these maps can be accessed instantly, even across network shares, and integrate seamlessly with existing raster-based analytical tools. Currently, the maps are for CONUS only, however, companion maps for HI and AK are planned. The 800m grid was selected to facilitate integration with the widely used PRISM climate data.
-
-Rationale here for why property maps, derived from SSURGO values averaged or aggregated across components in a map unit, are appropriate for delivering as soil property data for the public.  Does the method of deconstructing the original map unit/soil-landscape concept deliver useful information to the public?  How do we know it is “correct”? How do we communicate a measure of certainty or uncertainty about the data to the public if the original data doesn’t have this kind of attribution? Is the original correlation and certification process an acceptable level of validation for the use of the data?
+## Staff
+  * Dylan Beaudette - Digital Soil Mapping Specialist, NRCS Region 2
+  * Jennifer Wood - Soil Data Quality Specialist, NRCS Region 
+  * Tom D’Avello - Soil Scientist/GIS Specialist, NSSC-Geospatial Research Unit 
+  * Whityn Owen - GIS Specialist, NRCS Oregon
+  * Stephen Roecker - Soil Data Quality Specialist/GIS Specialist, NRCS Region 11
+  * Jason Nemecek - State Soil Scientist, Wisconsin
 
 
 ## Related Products
