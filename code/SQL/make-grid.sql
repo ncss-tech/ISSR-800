@@ -1,6 +1,13 @@
 -- 2016-07-20
 -- Start CONUS 800m grid project
+-- ticket: http://216.86.177.86:8000/ticket/161 [closed]
+-- working on: soilmap2-1 'ssurgo_combined' database
 -- entire operation takes about 30 minutes
+
+--
+-- TODO: create meta chunks for table partitioning
+--
+
 
 -- new schema
 CREATE SCHEMA conus_800m_grid;

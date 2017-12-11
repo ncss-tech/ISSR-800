@@ -1,4 +1,6 @@
 
+SET search_path TO conus_800m_grid, public ;
+SET work_mem to 800000 ;
 
 -- TODO: convert to integers
 -- combine SSURGO and STATSGO fractions, based on soil depth wt
@@ -10,8 +12,8 @@ FROM
 (
 select grid_gid,
 SUM(soil_depth_wt) / (800.0*800.0) as pct
-from grid_mapunit
-LEFT JOIN component_weights USING (gid)
+from ssurgo_grid_mapunit
+LEFT JOIN ssurgo_component_weights USING (gid)
 -- where grid_gid IN (SELECT gid from grid where chunk = '21-3')
 GROUP BY grid_gid
 ) as ssurgo
@@ -50,7 +52,7 @@ FROM
 grid
 JOIN (
 	SELECT 'ssurgo'::text as survey_type, *
-	FROM gridded_properties
+	FROM ssurgo_gridded_properties
 	-- keep SSURGO only when there is NO SSURGO data in a cell
 	WHERE grid_gid IN (SELECT grid_gid from survey_data_available WHERE ssurgo_flag = 1)
 	UNION
