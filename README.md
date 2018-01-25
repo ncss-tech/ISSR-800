@@ -34,3 +34,8 @@ Some ideas on scale-appropriate usage:
 ## Related Products
    * [CONUS-SOIL](http://www.soilinfo.psu.edu/index.cgi?soil_data&conus&data_cov&texture&image)
    * [Soils Database for Wind Erosion/Windblown Dust](http://www.lar.wsu.edu/nw-airquest/soils_database.html) [publication](http://www.jswconline.org/content/64/6/363.refs)
+   
+   
+## Related Publications
+   * [Ireland, A. W., and P. J. Drohan. 2015. Rapid Delineation of Preliminary Ecological Sites Applied to Forested Northern Appalachian Landscapes. Soil Sci. Soc. Am. J. 79:185-192.](https://dl.sciencesocieties.org/publications/sssaj/articles/79/1/185) (CONUS-SOIL used for rapid ESD development)
+   
