@@ -12,6 +12,8 @@ Provide a set of continuous rasters for selected soil properties for relevant de
 ## What
 The product proposed here provides soil property and interpretation information for 800m grid raster files. Values for a selected set of soil properties at specified depths, as well as selected interpretation, are provided for each 800m pixel. Depending on the property, depth interval used, and interpretation, different methods are used to aggregate within the profile and across the map unit. An excel spreadsheet is available on a NCSS GitHub site or a Database Focus Team SharePoint page for examination of the different values and methods used. Some pixels will represent information across map unit boundaries contained in the original vector maps. For this project, the 800m pixel size was chosen to provide a product for LRU to MLRA to continental scale projects that are small enough for rapid analysis and display. Another reason for the 800m pixel size is to approximate the size of the 800m PRISM climate products that are commonly available and used as climate proxies in many regional to continental scale analyses.
 
+![](examples/800m-grid-CA630-example.jpg)
+
 ## Purpose
 Some ideas on scale-appropriate usage:
   * MLRA comparison report
