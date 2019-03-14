@@ -62,21 +62,20 @@ ggtern(s, aes(clay, silt, sand)) + geom_point()
 ## TODO: contact author for additional ideas on color-mixing
 # https://github.com/jschoeley/tricolore
 
-## TODO: how can we reverse the ordering along each axis?
-# https://github.com/jschoeley/tricolore/issues/4
-
 
 # generate new tri-hue color scheme
-# colors_and_legend <- Tricolore(s, 'clay', 'silt', 'sand', hue=0, chroma=1, lightness=0.75, center=NA, contrast=0)
+colors_and_legend <- Tricolore(s, 'clay', 'silt', 'sand', hue=0, chroma=1, lightness=0.75, center=NA, contrast=0)
 colors_and_legend <- Tricolore(s, 'clay', 'silt', 'sand', hue=0, chroma=1, lightness=0.75, contrast=0, crop=TRUE)
+colors_and_legend <- Tricolore(s, 'clay', 'silt', 'sand', hue=0, chroma=1, lightness=0.75, contrast=0, crop=FALSE)
 
-colors_and_legend$key
+colors_and_legend$key + ggtern::theme_clockwise()
 plot(s[, 1:3], col=colors_and_legend$rgb, pch=15)
 
 
 ## now apply to full data
 ## this takes a while
 
+# consider lowering chroma
 # darker colors help with contrast
 # no-centering = categories
 colors_and_legend.cat <- Tricolore(spdf@data, 'clay', 'silt', 'sand', hue=0, chroma=1, lightness=0.5, contrast=0, show_data=FALSE)
