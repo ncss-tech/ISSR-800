@@ -105,6 +105,9 @@ plotRGB(r[[c('r', 'g', 'b')]], stretch='lin')
 
 plotRGB(r[[c('r.cat', 'g.cat', 'b.cat')]], stretch='lin')
 
+
+# save composte as RGBA tiff, alpha channel contains no-data values
+
 # 
 # ## combine figures via cowplot
 # # https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html
